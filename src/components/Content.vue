@@ -1,5 +1,10 @@
 <template>
-  <v-card class="v-card mx-auto" max-width="500">
+  <v-card
+    class="v-card mx-auto"
+    max-width="1000"
+    tile
+    :to="{ name: 'detailPage' }"
+  >
     <v-img
       src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
       height="200px"
@@ -14,9 +19,3 @@
     </v-card-subtitle>
   </v-card>
 </template>
-
-<style scoped>
-.v-card {
-  border: 1px bold black;
-}
-</style>

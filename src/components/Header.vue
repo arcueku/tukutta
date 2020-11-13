@@ -2,7 +2,7 @@
   <header>
     <v-app-bar app dark flat>
       <v-app-bar-nav-icon class="hidden-sm-and-up"></v-app-bar-nav-icon>
-      <v-toolbar-title>TUKUTTA</v-toolbar-title>
+      <v-toolbar-title>TESTAPP</v-toolbar-title>
       <v-spacer />
       <div class="d-none d-sm-flex">
         <v-btn icon>
