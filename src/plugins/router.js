@@ -12,6 +12,7 @@ export default new Router({
       path: "/detail",
       name: "detailPage",
       component: ContentDetail,
+      props: true,
     },
     {
       path: "/",

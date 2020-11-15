@@ -2,19 +2,14 @@
   <div class="contentdetail">
     <v-app>
       <v-carousel cycle hide-delimiters>
-        <v-carousel-item
-          v-for="(item, i) in items"
-          :key="i"
-          :src="item.src"
-        ></v-carousel-item>
+        <v-carousel-item :src="$route.params.image"></v-carousel-item>
       </v-carousel>
       <div class="detailtext">
-        <h2>タイトル</h2>
+        <h2>{{ $route.params.value }}</h2>
         <p>
-          詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント
-          詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント
-          詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント
-          詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント詳細コメント
+          ここには作品の説明が入ります。ここには作品の説明が入ります。ここには作品の説明が入ります。ここには作品の説明が入ります。
+          ここには作品の説明が入ります。ここには作品の説明が入ります。ここには作品の説明が入ります。ここには作品の説明が入ります。
+          ここには作品の説明が入ります。ここには作品の説明が入ります。ここには作品の説明が入ります。ここには作品の説明が入ります。
         </p>
       </div>
     </v-app>
@@ -27,10 +22,10 @@ export default {
     return {
       items: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+          src: "https://picsum.photos/600",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+          src: "https://picsum.photos/200",
         },
         {
           src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
