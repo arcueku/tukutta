@@ -3,9 +3,9 @@
     class="v-card mx-auto"
     max-width="1000"
     tile
-    :to="{ name: 'detailPage', params: { value: title, image: topImage } }"
+    :to="{ name: 'detailPage', params: { value: title, image: image } }"
   >
-    <v-img :src="topImage" height="200px">
+    <v-img :src="image" height="200px">
       <div class="fill-height bottom-gradient"></div>
     </v-img>
     <v-card-title>
@@ -19,10 +19,10 @@
 
 <script>
 export default {
-  props: ["title"],
+  props: ["title", "image"],
   data() {
     return {
-      topImage: "https://picsum.photos/200",
+      topImage: "https://unsplash.it/680/450?random",
     };
   },
 };
