@@ -5,12 +5,8 @@
         <v-carousel-item :src="$route.params.image"></v-carousel-item>
       </v-carousel>
       <div class="detailtext">
-        <h2>{{ $route.params.value }}</h2>
-        <p>
-          ここには作品の説明が入ります。ここには作品の説明が入ります。ここには作品の説明が入ります。ここには作品の説明が入ります。
-          ここには作品の説明が入ります。ここには作品の説明が入ります。ここには作品の説明が入ります。ここには作品の説明が入ります。
-          ここには作品の説明が入ります。ここには作品の説明が入ります。ここには作品の説明が入ります。ここには作品の説明が入ります。
-        </p>
+        <h2>{{ $route.params.title }}</h2>
+        <p>{{ $route.params.description }}</p>
       </div>
     </v-app>
   </div>

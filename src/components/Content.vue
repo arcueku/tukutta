@@ -3,7 +3,10 @@
     class="v-card mx-auto"
     max-width="1000"
     tile
-    :to="{ name: 'detailPage', params: { value: title, image: image } }"
+    :to="{
+      name: 'detailPage',
+      params: { title: title, image: image, description: description },
+    }"
   >
     <v-img :src="image" height="200px">
       <div class="fill-height bottom-gradient"></div>
@@ -12,14 +15,14 @@
       {{ title }}
     </v-card-title>
     <v-card-subtitle>
-      1,000 miles of wonder
+      {{ description }}
     </v-card-subtitle>
   </v-card>
 </template>
 
 <script>
 export default {
-  props: ["title", "image"],
+  props: ["title", "image", "description"],
   data() {
     return {
       topImage: "https://unsplash.it/680/450?random",
